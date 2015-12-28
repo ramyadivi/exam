@@ -1,0 +1,21 @@
+body {
+    width: 500px;
+    height: 500px;
+    border: 2px solid red;
+    padding: 30px 30px 30px 50px;
+}
+
+.cm p {
+    float: inline-block;
+}
+
+table,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    margin: center;
+    padding: 10px;
+}

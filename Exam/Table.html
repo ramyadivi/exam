@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=2">
+    <link rel="stylesheet" type="text/css" href="css/Table.css">
+    <link rel="icon" href="favicon/swirltastic-rainbow-16-220251.png" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+    <script type="text/javascript" src="js/Table.js"></script>
+    <div class="cm">
+        <h4>Column Master</h4>
+        <p>
+            <input type="button" value="Add column" onClick="addColumn()" />
+            <input type="button" value="Remove column" onClick="deleteColumn()" />
+        </p>
+        <table style="width:100%" id="my_table" align="center">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Column Name</th>
+                    <th>Column Type</th>
+                    <th>Editable</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="columns" value="right" ></td>
+                        <td>
+                            <input type="text" name="name" placeholder=" Name">
+                        </td>
+                        <td>
+                            <select>
+                                <option value="1">Number
+                                    <option value="2">String
+                                        <option value="3">Boolean
+                                            <option value="4">Date</select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="1">Yes
+                                    <option value="2">No</select>
+                        </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="rdg">
+        <h4>Result Data Grid</h4>
+        <p>
+            <input type="button" value="Add row" onClick="addrow()" />
+            <input type="button" value="Delete row" onClick="deleterow()" />
+        </p>
+        <table style="width:100%" id="my_table" align="center">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Column1</th>
+                    <th>Column2</th>
+                    <th>Column3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="columns" value="right" </td>
+                        <td>
+                            <input type="Number" name="SNo" placeholder="Number"  pattern="[0-9]{10}" title="enter 4 digit  Number" />
+                        </td>
+                        <td>String1</td>
+                        <td>
+                            <select>
+                                <option value="1">Yes
+                                    <option value="2">No</select>
+                        </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
